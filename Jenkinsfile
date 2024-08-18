@@ -8,6 +8,9 @@ pipeline{
 
 environment {
     PATH = "/opt/apache-maven-3.9.8/bin:$PATH"
+    BUILD_NUMBER = "${env.BUILD_NUMBER ?: 'latest'}"
+    registry = 'https://registry.hub.docker.com'
+    DOCKERHUB_CREDENTIALS = credentials('docker-hub')
 }
 
 stages {
