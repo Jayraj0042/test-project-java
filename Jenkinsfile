@@ -38,6 +38,19 @@ stages {
                 }
             }  
         }
+
+        stage('login to dockerhub') {
+            steps{
+                sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
+            }
+        }
+
+        stage('push image'){
+            steps{
+                sh 'docker push bunty4200/iqm_javaapp:${BUILD_NUMBER}'
+        }
+    }
+
     }
 }
 
