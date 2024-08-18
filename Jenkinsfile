@@ -25,6 +25,16 @@ stages {
                 echo "----------------------unit test completed------------"
             }
         }
+
+        stage('Build Docker image'){
+            steps{
+                script{
+                    echo "-----------------docker build started--------------"
+                     sh 'docker build -t bunty4200/iqm_javaapp:${BUILD_NUMBER} .'
+                    echo "-----------------docker build completed------------"
+                }
+            }  
+        }
     }
 }
 
