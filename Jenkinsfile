@@ -12,10 +12,10 @@ environment {
     registry = 'https://registry.hub.docker.com'
     DOCKERHUB_CREDENTIALS = credentials('docker-hub')
     AWS_REGION = 'ap-south-1'  // Update to your desired AWS region
-    CLUSTER_NAME = 'my-ecs-cluster'  // Update with your ECS Cluster name
-    SERVICE_NAME = 'my-ecs-service'  // Update with your ECS Service name
-    TASK_DEFINITION = 'my-task-def'  // Update with your Task Definition family name
-    CONTAINER_NAME = 'my-container'  // Update with your container name used in the task definition
+    CLUSTER_NAME = 'jc-ecs-cluster'  // Update with your ECS Cluster name
+    SERVICE_NAME = 'jc-ecs-service'  // Update with your ECS Service name
+    TASK_DEFINITION = 'jc-task-def'  // Update with your Task Definition family name
+    CONTAINER_NAME = 'jc-java-container'  // Update with your container name used in the task definition
 }
 
 stages {
