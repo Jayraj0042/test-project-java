@@ -21,7 +21,7 @@ public class Application {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return "Hello World Good Morning: " + String.valueOf(counter);
+        return "Hello Good Morning: " + String.valueOf(counter);
     }
 
 }
