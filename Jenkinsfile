@@ -85,8 +85,8 @@ stages {
                         }
                     ]' \
                     --requires-compatibilities FARGATE \
-                    --execution-role-arn arn:aws:iam::533267330681:role/ecsTaskExecutionRole \
-                    --task-role-arn arn:aws:iam::533267330681:role/ecsTaskRole \
+                    --execution-role-arn arn:aws:iam::654654437530:role/ecsTaskExecutionRole \
+                    --task-role-arn arn:aws:iam::654654437530:role/ecsTaskRole \
                      --query 'taskDefinition.taskDefinitionArn' \
                      --output text
                     """, returnStdout: true).trim()
