@@ -52,7 +52,7 @@ stages {
     }
 
     }
-    post{
+post{
     always{
         sh 'docker logout'
     }
